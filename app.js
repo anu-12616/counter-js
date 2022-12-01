@@ -14,6 +14,12 @@ if (styles.contains('decrease')){
     count++;
 }else{
     count =0;
+}if(count>0){
+value.styles.color ='green'
+}if(count<0){
+    value.styles.color ='red'  
+}if(count===0){
+    value.styles.color ='blue'  
 }
 value.textContent=count;
     })
